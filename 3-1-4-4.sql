@@ -9,11 +9,11 @@ SELECT
   , substring(stamp,  1, 7) AS year_month
   
   -- ■ PostgreSQL, Hive, Redshift, SparkSQLでは、substr関数が利用できる
-  , substr(stamp,  1, 4) AS year
-  , substr(stamp,  6, 2) AS month
-  , substr(stamp,  9. 2) AS day
-  , substr(stamp, 12, 2) AS hour
-  , substr(stamp,  1, 7) AS year_month
+  -- , substr(stamp,  1, 4) AS year
+  -- , substr(stamp,  6, 2) AS month
+  -- , substr(stamp,  9, 2) AS day
+  -- , substr(stamp, 12, 2) AS hour
+  -- , substr(stamp,  1, 7) AS year_month
 FROM
   -- ■ PostgreSQL, Redshiftの場合、文字列型としてtextが利用できる
   (SELECT CAST('2016-01-30 12:00:00' AS text) AS stamp) AS t
