@@ -5,7 +5,7 @@ SELECT
       + SIGN(COALESCE(q3, 0) + COALESCE(q4, 0)))
     AS average
 FROM
-  quaterly_sales
+  quarterly_sales
 ORDER BY
   year
 ;
